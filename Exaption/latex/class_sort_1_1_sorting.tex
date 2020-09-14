@@ -1,0 +1,271 @@
+\hypertarget{class_sort_1_1_sorting}{}\doxysection{Sort.\+Sorting Class Reference}
+\label{class_sort_1_1_sorting}\index{Sort.Sorting@{Sort.Sorting}}
+
+
+Класс методов сортировки  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_a6e9062b9b9d2c9ee5771e0e0a7fae271}{Vibor\+Sort}} (int\mbox{[}$\,$\mbox{]} mas, \mbox{\hyperlink{class_sort_1_1_options}{Options}} Ops)
+\begin{DoxyCompactList}\small\item\em Сортировка методов выбора \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_a61b38004175cb35622a6ec2c689c0bc8}{Insertion\+Sort}} (int\mbox{[}$\,$\mbox{]} array)
+\begin{DoxyCompactList}\small\item\em Cортировка вставками \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_ae805d7cb3b811fa44187c46e91ba9a74}{Sort\+Decrease\+Int}} (int\mbox{[}$\,$\mbox{]} ara)
+\begin{DoxyCompactList}\small\item\em Cортировка по убыванию \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_a2ff71dbfdff2e6f83178388898bf2bdf}{Sort\+Ascending}} (string\mbox{[}$\,$\mbox{]} words)
+\begin{DoxyCompactList}\small\item\em Cортировка по возрастанию \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_a96cd1a9ea6259676594fd90480725ffe}{Sort\+Decrease}} (string\mbox{[}$\,$\mbox{]} words)
+\begin{DoxyCompactList}\small\item\em Cортировка по убыванию \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_a5cbd5267383cab513f43abf6518a5d66}{Sort\+Decrease\+Yet}} (string\mbox{[}$\,$\mbox{]} words)
+\begin{DoxyCompactList}\small\item\em Дополнительная сортировка по возрастанию \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_ad56213ca321de25c22302e1ea5e752cf}{Sort\+Natural}} (List$<$ String $>$ list)
+\begin{DoxyCompactList}\small\item\em Естественная сортировка \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_sort_1_1_sorting_a5411e36f27de9b269bb38a87173d1b4f}{Pad\+Numbers}} (string input)
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция для естественной сортировки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс методов сортировки 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sort_1_1_sorting_a61b38004175cb35622a6ec2c689c0bc8}\label{class_sort_1_1_sorting_a61b38004175cb35622a6ec2c689c0bc8}} 
+\index{Sort.Sorting@{Sort.Sorting}!InsertionSort@{InsertionSort}}
+\index{InsertionSort@{InsertionSort}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{InsertionSort()}{InsertionSort()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Insertion\+Sort (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Cортировка вставками 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Массив чисел \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отсортированный массив 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{\textcolor{keywordtype}{int}[] arr = \{ 214, 443, 582, 484, 326, 746, 245, 126, 453, 615 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{ MainResult = Sorting.InsertionSort(arr);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{\textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"126 214 245 326 443 453 484 582 615 746"};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_a5411e36f27de9b269bb38a87173d1b4f}\label{class_sort_1_1_sorting_a5411e36f27de9b269bb38a87173d1b4f}} 
+\index{Sort.Sorting@{Sort.Sorting}!PadNumbers@{PadNumbers}}
+\index{PadNumbers@{PadNumbers}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{PadNumbers()}{PadNumbers()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Pad\+Numbers (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Вспомогательная функция для естественной сортировки 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает строку, заполненную 4-\/мя нулями 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string}[] array = \{ \textcolor{stringliteral}{"a10b"}, \textcolor{stringliteral}{"a11b"}, \textcolor{stringliteral}{"a3b"}, \textcolor{stringliteral}{"a30b"}, \textcolor{stringliteral}{"a20b"}, \textcolor{stringliteral}{"a21b"}, \textcolor{stringliteral}{"a2b"}, \textcolor{stringliteral}{"a1b"}, \textcolor{stringliteral}{"a12b"} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{ \textcolor{keywordflow}{return} Regex.Replace(input, \textcolor{stringliteral}{"[0-\/9]+"}, match => match.Value.PadLeft(4, \textcolor{charliteral}{'0'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"a10000b a20000b a30000b a100000b a110000b a120000b a200000b a210000b a300000b "};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_a2ff71dbfdff2e6f83178388898bf2bdf}\label{class_sort_1_1_sorting_a2ff71dbfdff2e6f83178388898bf2bdf}} 
+\index{Sort.Sorting@{Sort.Sorting}!SortAscending@{SortAscending}}
+\index{SortAscending@{SortAscending}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{SortAscending()}{SortAscending()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Sort\+Ascending (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Cортировка по возрастанию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em words} & Массив слов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Упорядоченная строка 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string}[] array = \{ \textcolor{stringliteral}{"fhdy"}, \textcolor{stringliteral}{"dhvdsd"}, \textcolor{stringliteral}{"q"}, \textcolor{stringliteral}{"rw"}, \textcolor{stringliteral}{"qwe"}, \textcolor{stringliteral}{"qwasda"}, \textcolor{stringliteral}{"sdasdww"} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{ MainResult = Sorting.SortAscending(arr);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{\textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"q rw qwe fhdy dhvdsd qwasda sdasdww "};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_a96cd1a9ea6259676594fd90480725ffe}\label{class_sort_1_1_sorting_a96cd1a9ea6259676594fd90480725ffe}} 
+\index{Sort.Sorting@{Sort.Sorting}!SortDecrease@{SortDecrease}}
+\index{SortDecrease@{SortDecrease}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{SortDecrease()}{SortDecrease()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Sort\+Decrease (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Cортировка по убыванию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em words} & Массив слов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Упорядоченная строка 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string}[] array = \{ \textcolor{stringliteral}{"fhdy"}, \textcolor{stringliteral}{"dhvdsd"}, \textcolor{stringliteral}{"q"}, \textcolor{stringliteral}{"rw"}, \textcolor{stringliteral}{"qwe"}, \textcolor{stringliteral}{"qwasda"}, \textcolor{stringliteral}{"sdasdww"} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{MainResult = Sorting.SortDecrease(arr);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string} res = \textcolor{stringliteral}{"sdasdww dhvdsd qwasda fhdy qwe rw q "};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_ae805d7cb3b811fa44187c46e91ba9a74}\label{class_sort_1_1_sorting_ae805d7cb3b811fa44187c46e91ba9a74}} 
+\index{Sort.Sorting@{Sort.Sorting}!SortDecreaseInt@{SortDecreaseInt}}
+\index{SortDecreaseInt@{SortDecreaseInt}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{SortDecreaseInt()}{SortDecreaseInt()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Sort\+Decrease\+Int (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{ara }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Cортировка по убыванию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ara} & Массив чисел \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отсортированный массив 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{\textcolor{keywordtype}{int}[] arr = \{ 234, 443, 582, 484, 326, 746, 245, 126, 453, 615 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{  MainResult = Sorting.SortDecreaseInt(arr);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{\textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"746 615 582 484 453 443 326 245 234 126"};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_a5cbd5267383cab513f43abf6518a5d66}\label{class_sort_1_1_sorting_a5cbd5267383cab513f43abf6518a5d66}} 
+\index{Sort.Sorting@{Sort.Sorting}!SortDecreaseYet@{SortDecreaseYet}}
+\index{SortDecreaseYet@{SortDecreaseYet}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{SortDecreaseYet()}{SortDecreaseYet()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Sort\+Decrease\+Yet (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Дополнительная сортировка по возрастанию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em words} & Массив слов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Упорядоченная строка 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string}[] array = \{ \textcolor{stringliteral}{"fhdy"}, \textcolor{stringliteral}{"dhvdsd"}, \textcolor{stringliteral}{"q"}, \textcolor{stringliteral}{"rw"}, \textcolor{stringliteral}{"qwe"}, \textcolor{stringliteral}{"qwasda"}, \textcolor{stringliteral}{"sdasdww"} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{ MainResult = Sorting.SortDecreaseYet(arr);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"q rw qwe fhdy dhvdsd qwasda sdasdww "};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_ad56213ca321de25c22302e1ea5e752cf}\label{class_sort_1_1_sorting_ad56213ca321de25c22302e1ea5e752cf}} 
+\index{Sort.Sorting@{Sort.Sorting}!SortNatural@{SortNatural}}
+\index{SortNatural@{SortNatural}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{SortNatural()}{SortNatural()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Sort\+Natural (\begin{DoxyParamCaption}\item[{List$<$ String $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Естественная сортировка 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Лист строк\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Упорядоченная строка 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string}[] array = \{ \textcolor{stringliteral}{"a10b"}, \textcolor{stringliteral}{"a11b"}, \textcolor{stringliteral}{"a3b"}, \textcolor{stringliteral}{"a30b"}, \textcolor{stringliteral}{"a20b"}, \textcolor{stringliteral}{"a21b"}, \textcolor{stringliteral}{"a2b"}, \textcolor{stringliteral}{"a1b"}, \textcolor{stringliteral}{"a12b"} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{  MainResult = Sorting.SortNatural(arr);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{ \textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"a1b a2b a3b a10b a11b a12b a20b a21b a30b "};}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_sort_1_1_sorting_a6e9062b9b9d2c9ee5771e0e0a7fae271}\label{class_sort_1_1_sorting_a6e9062b9b9d2c9ee5771e0e0a7fae271}} 
+\index{Sort.Sorting@{Sort.Sorting}!ViborSort@{ViborSort}}
+\index{ViborSort@{ViborSort}!Sort.Sorting@{Sort.Sorting}}
+\doxysubsubsection{\texorpdfstring{ViborSort()}{ViborSort()}}
+{\footnotesize\ttfamily static string Sort.\+Sorting.\+Vibor\+Sort (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{mas,  }\item[{\mbox{\hyperlink{class_sort_1_1_options}{Options}}}]{Ops }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Сортировка методов выбора 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mas} & Массив чисел \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отсортированный массив 
+\end{DoxyReturn}
+{\bfseries{Example\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Входные данные:}
+\DoxyCodeLine{\textcolor{keywordtype}{int}[] arr = \{ 234, 443, 582, 484, 326, 746, 245, 126, 453, 615 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Применение:}
+\DoxyCodeLine{MainResult = Sorting.ViborSort(arr, Ops);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Результат:}
+\DoxyCodeLine{\textcolor{keywordtype}{string} MainResult = \textcolor{stringliteral}{"126 234 245 326 443 453 484 582 615 746"};}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Program.\+cs\end{DoxyCompactItemize}
